@@ -1,0 +1,28 @@
+{
+  "name": "unglish",
+  "version": "1.0.0",
+  "description": "Generate random words that almost but not quite entirely unlike english.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomilous/unglish.git"
+  },
+  "keywords": [
+    "generate",
+    "random",
+    "word"
+  ],
+  "author": "nomilous@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nomilous/unglish/issues"
+  },
+  "homepage": "https://github.com/nomilous/unglish#readme",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^3.4.2"
+  }
+}
