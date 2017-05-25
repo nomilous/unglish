@@ -1,10 +1,11 @@
 {
   "name": "unglish",
   "version": "1.0.0",
-  "description": "Generate random words that almost but not quite entirely unlike english.",
+  "description": "Generate random words that are almost but not quite entirely unlike english.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "update": "node update"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,9 @@
   "keywords": [
     "generate",
     "random",
-    "word"
+    "words",
+    "word",
+    "english"
   ],
   "author": "nomilous@gmail.com",
   "license": "MIT",

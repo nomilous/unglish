@@ -1,5 +1,5 @@
 # unglish
-Generate random words that almost but not quite entirely unlike english.
+Generate random words that are almost but not quite entirely unlike english.
 
 
 
