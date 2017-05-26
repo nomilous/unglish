@@ -1,0 +1,57 @@
+#!/usr/bin/env node
+
+var wordCount = process.argv[2];
+
+var unglish = require('..');
+var sentence = '';
+
+for (var i = 0; i < wordCount; i++) {
+
+  sentence += unglish.generate(wordLength());
+
+  if (i == 0) {
+    sentence = sentence.replace(/^[a-z]/, sentence[0].toUpperCase());
+  }
+
+  if (i < wordCount - 1) {
+    sentence += ' ';
+  } else {
+    sentence += '.';
+  }
+
+}
+
+console.log(sentence);
+
+function wordLength() {
+
+  var preference = {
+    1: 5,
+    2: 5,
+    3: 9,
+    4: 9,
+    5: 13,
+    6: 16,
+    7: 7,
+    8: 5
+  };
+
+  var options = [];
+
+  Object.keys(preference).forEach(function (length) {
+
+    var count = preference[length];
+
+    for (var i = 0; i < count; i++) {
+
+      options.push(length);
+
+    }
+
+  });
+
+  var selection = Math.floor(Math.random() * options.length);
+
+  return parseInt(options[selection]);
+
+}

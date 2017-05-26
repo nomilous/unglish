@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+var unglish = require('..');
+var length = parseInt(process.argv[2] || 5);
+
+console.log(unglish.generate(length));
