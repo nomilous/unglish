@@ -9,8 +9,8 @@ npm install unglish --save
 ```javascript
 var unglish = require('unglish');
 
-unglish.generate(5);  // ughty
-unglish.generate(9);  // astaltrit
+unglish.generate(5);  // scane
+unglish.generate(9);  // iniminate
 unglish.generate(13); // tensomilpocli
 
 unglish.done(); // clear memory resources
