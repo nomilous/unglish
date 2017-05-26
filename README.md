@@ -2,7 +2,23 @@
 
 Generate random words that are almost but not quite entirely unlike english.
 
+```
+npm install unglish --save
+```
 
+```javascript
+var unglish = require('unglish');
+
+unglish.generate(5);  // ughty
+unglish.generate(9);  // astaltrit
+unglish.generate(13); // tensomilpocli
+
+unglish.done(); // clear memory resources
+```
+
+### collisions
+
+Will vary.
 
 ```
 word length 1 collides at 3 words
@@ -16,3 +32,4 @@ word length 8 collides at 8533 words
 word length 9 collides at 28694 words
 word length 10 collides at 140337 words
 ```
+
