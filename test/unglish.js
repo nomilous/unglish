@@ -53,6 +53,7 @@ describe(filename, function () {
       for (var i = 0; i < 10000; i++) {
 
         word = unglish.generate(10);
+        // console.log(unglish.generate(10));
 
       }
 
@@ -76,19 +77,15 @@ describe(filename, function () {
       var options = unglish._getOptions([]);
 
       expect(options).to.eql([
-        [ 786358, 'vowel' ],
-        [ 1688137, 'consonant' ]
+        [ 780108, 'vowel' ],
+        [ 1662287, 'consonant' ]
       ]);
 
       options = unglish._getOptions(['vowel'])
 
       expect(options).to.eql([
         [ 685186, '1' ],
-        [ 780108, '2' ],
-        [ 786192, '3' ],
-        [ 786353, '4' ],
-        [ 786357, '5' ],
-        [ 786358, '6' ]
+        [ 780108, '2' ]
       ]);
 
       done();
